@@ -9,3 +9,21 @@ python_words = {
 print("Lug'at elemetlari")
 for a, b in python_words.items():
     print(f"Kalit=={a} qiymat=={b}")
+# Davlatlar va ularning poytaxtlari lug'atini tuzing. Avval lug'atdagi davlatlarni, keyin poytaxtlarni alohida-alohida,
+# alifbo ketma-ketligida konsolga chiqaring.
+davlatlar = {
+    "o'zbekiston": 'toshkent',
+    'aqsh': 'washington d.c.',
+    'rossiya': 'moskva',
+    'tojikiston': 'dushanbe',
+    "qirg'iziston": 'bishkek',
+    'qozog\'iston': 'nursulton',
+    'malayziya': 'kuala-lumpur',
+    'singapur': 'sungapur',
+    'italiya': 'rim'}
+print("Davlat nomlari:")
+for a in sorted(davlatlar.keys()):
+    print(a)
+print("Poytaxt nomlari:")
+for a in sorted(davlatlar.values()):
+    print(a)
