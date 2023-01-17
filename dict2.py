@@ -27,3 +27,10 @@ for a in sorted(davlatlar.keys()):
 print("Poytaxt nomlari:")
 for a in sorted(davlatlar.values()):
     print(a)
+# Foydalanuvchidan istalgan davlatni kiritishni so'rang va shu davlatning poytaxtini konsolga chiqaring.
+# Agar foydalanuvchi lug'atda yo'q davlatni kiritsa, "Bizda bunday ma'lumot yo'q" degan xabarni chiqaring.
+davlat = input("Davlat nomini kiriting: ").lower()
+if davlat in davlatlar.keys():
+    print(f"{davlat.title()} davlati poytaxti {davlatlar[davlat].title()}")
+else:
+    print("Ro'yxatda bunday davlat nomi yo'q!")
